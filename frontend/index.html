@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Where's Waldo - Children's Games</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="game-header">
+  <div class="header-left">
+    <h1>Where's Waldo?</h1>
+    <span class="subtitle">Bruegel Edition</span>
+  </div>
+  
+  <div class="header-center">
+    <p>Find: <strong>Hoop rolling</strong>, <strong>Children on stilts</strong>, <strong>Boy on barrel</strong></p>
+  </div>
+
+  <div class="header-right">
+    <div id="score-counter">Found: <span id="score-val">0/3</span></div>
+    <div id="timer">Time: 0s</div>
+  </div>
+</header>
+
+  <main>
+    <div class="image-container" id="image-container">
+      <img src="bruegel.jpg" id="game-image" alt="Children's Games by Pieter Bruegel" />
+
+      <!-- Menu suspenso para selecionar a personagem -->
+      <div id="target-menu" class="hidden">
+        <ul id="target-list"></ul>
+      </div>
+    </div>
+    <div id="high-scores-section">
+  <h2>🏆 High Scores</h2>
+  <ul id="high-scores-list">
+    
+  </ul>
+</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

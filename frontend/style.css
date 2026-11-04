@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-header {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.header-left h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.header-center {
+  font-size: 0.95rem;
+  color: #34495e;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #2c3e50;
+}
+
+#image-container {
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#game-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Menu Dropdown de Seleção de Alvos */
+#target-menu {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 6px 0;
+  z-index: 1000;
+}
+
+#target-menu.hidden {
+  display: none !important;
+}
+
+#target-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#target-menu li {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+#target-menu li:hover {
+  background-color: #f1f5f9;
+}
+
+/* Secção de High Scores */
+#high-scores-section {
+  margin: 20px auto;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+#high-scores-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+#high-scores-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#high-scores-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  color: #34495e;
+}
+
+#high-scores-list li:last-child {
+  border-bottom: none;
+}

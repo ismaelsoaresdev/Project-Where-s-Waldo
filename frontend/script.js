@@ -1,4 +1,4 @@
-const API_URL = 'https://wheres-waldo-backend-8smf.onrender.com';
+const API_URL = 'https://wheres-waldo-backend-8smf.onrender.com/api';
 
 const gameImage = document.getElementById('game-image');
 const gameContainer = document.getElementById('game-container') || gameImage.parentElement;
